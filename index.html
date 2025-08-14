@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="en">
+<!-- ========================================
+     HEAD SECTION - Meta tags, fonts, and stylesheets
+     ======================================== -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +19,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ========================================
+         HEADER SECTION - Navigation and logo
+         ======================================== -->
     <header id="header">
         <div class="container">
             <div class="logo">Ligenix</div>
@@ -24,12 +30,14 @@
                 <a href="#services">Services</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#why-us">Why Choose Us</a>
-                <a href="#testimonials">Testimonials</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
+    <!-- ========================================
+         HERO SECTION - Main banner with particles background
+         ======================================== -->
     <section class="hero" id="hero">
         <div id="particles-js"></div>
         <div class="hero-content">
@@ -42,6 +50,9 @@
         </div>
     </section>
 
+    <!-- ========================================
+         ABOUT SECTION - Company introduction and description
+         ======================================== -->
     <section class="section" id="about">
         <div class="container">
             <h2 class="section-title">About Us</h2>
@@ -49,6 +60,9 @@
         </div>
     </section>
 
+    <!-- ========================================
+         SERVICES SECTION - Service offerings grid
+         ======================================== -->
     <section class="section" id="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
@@ -73,6 +87,9 @@
         </div>
     </section>
 
+    <!-- ========================================
+         PORTFOLIO SECTION - Project showcase gallery
+         ======================================== -->
     <section class="section" id="portfolio">
         <div class="container">
             <h2 class="section-title">Our Portfolio</h2>
@@ -123,11 +140,15 @@
         </div>
     </section>
 
+    <!-- ========================================
+         WHY CHOOSE US SECTION - Benefits and features
+         ======================================== -->
     <section class="section" id="why-us">
         <div class="container">
             <h2 class="section-title">Why Choose Us</h2>
             <p class="section-subtitle">Experience the future of AI-powered advertising with industry-leading technology and unmatched results</p>
             
+            <!-- Main benefits grid -->
             <div class="why-us-grid">
                 <div class="why-us-card fade-in-on-scroll">
                     <div class="why-us-icon">
@@ -195,6 +216,7 @@
                 </div>
             </div>
 
+            <!-- Additional feature highlights -->
             <div class="why-us-features">
                 <div class="feature-highlight fade-in-on-scroll">
                     <div class="feature-icon">🚀</div>
@@ -220,57 +242,15 @@
             </div>
         </div>
     </section>
-
     
-
-    <section class="section cta-banner">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-badge fade-in-on-scroll">
-                    <span class="badge-icon">🚀</span>
-                    <span class="badge-text">Limited Time Offer</span>
-                </div>
-                
-                <h2 class="cta-title fade-in-on-scroll">Ready to Transform Your Marketing with AI?</h2>
-                <p class="cta-subtitle fade-in-on-scroll">Join 10,000+ businesses creating stunning video ads in minutes, not weeks. Get your first AI-generated video free!</p>
-                
-                <div class="cta-stats fade-in-on-scroll">
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Happy Clients</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Videos Created</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">4.9★</span>
-                        <span class="stat-label">Client Rating</span>
-                    </div>
-                </div>
-                
-                <div class="cta-buttons fade-in-on-scroll">
-                    <a href="#contact" class="btn btn-cta-primary">
-                        <span class="btn-text">Start Free Trial</span>
-                        
-                    </a>
-                    <a href="#portfolio" class="btn btn-cta-secondary">
-                        <span class="btn-icon">▶</span>
-                        <span class="btn-text">Watch Demo</span>
-                    </a>
-                </div>
-                
-
-                
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- ========================================
+         CONTACT SECTION - Contact form and information
+         ======================================== -->
     <section class="section" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-form">
+                <!-- Contact form -->
                 <form>
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
@@ -283,6 +263,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                 </form>
+                <!-- Contact information -->
                 <div style="text-align: center; margin-top: 40px; color: var(--text-muted);">
                     <p style="font-size: 1.1rem;">
                         <strong>Email:</strong> <a href="ligenixai@gmail.com" style="color: var(--accent-color);">ligenixai@gmail.com</a> | 
@@ -293,6 +274,9 @@
         </div>
     </section>
 
+    <!-- ========================================
+         FOOTER SECTION - Site links and copyright
+         ======================================== -->
     <footer>
         <div class="container">
             <div class="footer-links">
@@ -306,12 +290,18 @@
         </div>
     </footer>
 
+    <!-- ========================================
+         LIGHTBOX MODAL - Image/content overlay display
+         ======================================== -->
     <div class="lightbox" id="lightbox">
         <span class="lightbox-close">&times;</span>
         <div class="lightbox-content">
         </div>
     </div>
 
+    <!-- ========================================
+         EXTERNAL SCRIPTS - Third-party libraries
+         ======================================== -->
     <!-- External Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     
