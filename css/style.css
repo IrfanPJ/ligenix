@@ -147,6 +147,20 @@ nav a:hover {
     z-index: 1;
 }
 
+#particles-about,
+#particles-services,
+#particles-portfolio,
+#particles-why-us,
+#particles-contact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+
 .hero-content {
     z-index: 10;
     position: relative;

@@ -57,7 +57,7 @@ document.querySelectorAll('.fade-in-on-scroll').forEach(element => {
     fadeInObserver.observe(element);
 });
 
-// Enhanced particles.js configuration
+// Enhanced particles.js configuration for hero (with hover effects)
 particlesJS('particles-js', {
     "particles": {
         "number": {
@@ -146,6 +146,88 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
 });
+
+// Base particles configuration for other sections (no hover effects)
+const baseParticlesConfig = {
+    "particles": {
+        "number": {
+            "value": 80,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": ["#00d4ff", "#ff006e", "#4facfe"]
+        },
+        "shape": {
+            "type": ["circle", "triangle"],
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            }
+        },
+        "opacity": {
+            "value": 0.6,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0.2,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 2,
+                "size_min": 0.5,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 120,
+            "color": "#00d4ff",
+            "opacity": 0.2,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": false
+            },
+            "onclick": {
+                "enable": false
+            },
+            "resize": true
+        }
+    },
+    "retina_detect": true
+};
+
+// Initialize particles for all sections
+particlesJS('particles-about', baseParticlesConfig);
+particlesJS('particles-services', baseParticlesConfig);
+particlesJS('particles-portfolio', baseParticlesConfig);
+particlesJS('particles-why-us', baseParticlesConfig);
+particlesJS('particles-contact', baseParticlesConfig);
 
 // Enhanced testimonials slider
 const testimonialsData = [
